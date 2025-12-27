@@ -4,6 +4,7 @@ import Logo from "./components/Logo";
 import Navbar from "./components/Navbar";
 import OrderContainer from "./components/OrderContainer";
 import States from "./components/States";
+import Footer from "./components/Footer";
 const loadOrders = () => fetch("/orders.json").then((res) => res.json());
 
 
@@ -19,6 +20,7 @@ const App= () => {
        <OrderContainer promise={ticketPromise}></OrderContainer>
        </Suspense>
       </section>
+      <Footer></Footer>
       
      
     </>
